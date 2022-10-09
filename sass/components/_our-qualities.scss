@@ -1,0 +1,37 @@
+.our-qualities {
+    background-color: getColor("background-0");
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__element {
+        width: 270px;
+    }
+
+    &__icon {
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: getColor("background-1");
+        padding: 25px 100px;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        font-size: getFontSize("regular");
+        line-height: 1.14;
+        letter-spacing: getLetterSpacing("regular");
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: getFontSize("regular");
+        line-height: 1.71;
+        letter-spacing: getLetterSpacing("regular");
+        color: getColor("secondary");
+    }
+}

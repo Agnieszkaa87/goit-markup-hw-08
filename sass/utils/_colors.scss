@@ -1,0 +1,17 @@
+$colors: (
+    "brand": #2196f3,
+    "primary": #212121,
+    "secondary": #757575,
+    "logo": #000000,
+    "opposite": #ffffff,
+    "background-0": #ffffff,
+    "background-1": #f5f4fa,
+    "background-2": #2f303a,
+    "header-border": #ececec,
+    "product-border": #eeeeee,
+    "icon": #afb1b8,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

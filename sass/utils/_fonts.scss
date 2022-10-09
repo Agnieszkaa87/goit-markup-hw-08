@@ -1,0 +1,37 @@
+$standard-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
+
+$font-weights: (
+    "medium": 500,
+    "bold": 700,
+    "extra-bold": 900,
+);
+
+@function getFontWeight($key) {
+    @return map-get($font-weights, $key);
+}
+
+$font-sizes: (
+    "reduced": 12px,
+    "regular": 14px,
+    "enlarged": 16px,
+    "product": 18px,
+    "modal-header": 20px,
+    "logo": 26px,
+    "section-header": 36px,
+    "top-section-header": 44px,
+);
+
+@function getFontSize($key) {
+    @return map-get($font-sizes, $key);
+}
+
+$letter-spacings: (
+    "reduced": 0.01em,
+    "header-link": 0.02em,
+    "regular": 0.03em,
+    "enlarged": 0.06em,
+);
+@function getLetterSpacing($key) {
+    @return map-get($letter-spacings, $key);
+}
