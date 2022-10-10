@@ -73,6 +73,7 @@
     &__network-list {
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__network-element:not(:last-child) {
