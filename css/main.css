@@ -686,7 +686,6 @@ body {
   background-color: #2196f3;
 }
 .footer__newsletter-div {
-  margin-left: 8px;
   text-align: center;
 }
 .footer__newsletter-form {
@@ -700,7 +699,7 @@ body {
   gap: 20px;
 }
 .footer__input {
-  width: 50%;
+  width: 100%;
   max-width: 450px;
   min-width: 290px;
   height: 50px;
@@ -792,6 +791,7 @@ body {
   }
   .footer__newsletter-div {
     text-align: left;
+    margin-left: 8px;
   }
   .footer__newsletter-form {
     -webkit-box-orient: horizontal;

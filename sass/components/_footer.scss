@@ -103,7 +103,6 @@
     }
 
     &__newsletter-div {
-        margin-left: 8px;
         text-align: center;
     }
 
@@ -114,7 +113,7 @@
     }
 
     &__input {
-        width: 50%;
+        width: 100%;
         max-width: 450px;
         min-width: 290px;
         height: 50px;
@@ -216,6 +215,7 @@
 
         &__newsletter-div {
             text-align: left;
+            margin-left: 8px;
         }
 
         &__newsletter-form {
