@@ -4,19 +4,18 @@
     &__list {
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
-    &__element {
-        width: 270px;
-    }
-
-    &__icon {
-        width: 270px;
+    &__icon-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         height: 120px;
         border-radius: 4px;
         background-color: getColor("background-1");
-        padding: 25px 100px;
         margin-bottom: 30px;
     }
 
@@ -26,6 +25,7 @@
         letter-spacing: getLetterSpacing("regular");
         text-transform: uppercase;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     &__text {
@@ -33,5 +33,27 @@
         line-height: 1.71;
         letter-spacing: getLetterSpacing("regular");
         color: getColor("secondary");
+    }
+}
+
+// tablet
+@media (min-width: 768px) {
+    .our-qualities {
+        &__element {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        &__name {
+            text-align: left;
+        }
+    }
+}
+
+// desktop
+@media (min-width: 1200px) {
+    .our-qualities {
+        &__list {
+            flex-wrap: nowrap;
+        }
     }
 }

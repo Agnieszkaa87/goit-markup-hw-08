@@ -58,7 +58,11 @@
                             class="header__contact-link"
                             href="mailto:info@devstudio.com"
                         >
-                            <svg class="header__icon" width="16" height="12">
+                            <svg
+                                class="header__mail-icon"
+                                width="16"
+                                height="12"
+                            >
                                 <use
                                     href="images/icons.svg#icon-envelope"
                                 ></use></svg
@@ -67,7 +71,11 @@
                     </li>
                     <li class="header__contact-element">
                         <a class="header__contact-link" href="tel:+48111111111"
-                            ><svg class="header__icon" width="10" height="16">
+                            ><svg
+                                class="header__tel-icon"
+                                width="10"
+                                height="16"
+                            >
                                 <use
                                     href="images/icons.svg#icon-smartphone"
                                 ></use></svg
@@ -75,6 +83,15 @@
                         >
                     </li>
                 </ul>
+                <svg
+                    class="header__menu-icon js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    width="24px"
+                    height="16px"
+                >
+                    <use href="images/icons.svg#icon-menu"></use>
+                </svg>
             </div>
         </header>
 
@@ -127,15 +144,14 @@
                     </div>
 
                     <ul class="products__list">
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_1.jpg"
+                                        srcset="images/img3_1@2x.jpg 2x"
                                         alt="Technocrack"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -156,15 +172,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_2.jpg"
+                                        srcset="images/img3_2@2x.jpg 2x"
                                         alt="Grafika New Orlean vs Golder Star"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -185,15 +200,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_3.jpg"
+                                        srcset="images/img3_3@2x.jpg 2x"
                                         alt="Restauracja Seafood"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -214,15 +228,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_4.jpg"
+                                        srcset="images/img3_4@2x.jpg 2x"
                                         alt="Projekt Prime"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -243,15 +256,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_5.jpg"
+                                        srcset="images/img3_5@2x.jpg 2x"
                                         alt="Projekt Boxes"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -272,15 +284,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_6.jpg"
+                                        srcset="images/img3_6@2x.jpg 2x"
                                         alt="Inspiration has no Borders"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -303,15 +314,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_7.jpg"
+                                        srcset="images/img3_7@2x.jpg 2x"
                                         alt="Magazyn Limited Edition"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -332,15 +342,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_8.jpg"
+                                        srcset="images/img3_8@2x.jpg 2x"
                                         alt="Projekt LAB"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -359,15 +368,14 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="products__element">
                             <figure class="products__card">
                                 <div class="products__picture-div">
                                     <img
                                         class="products__picture"
                                         src="images/img3_9.jpg"
+                                        srcset="images/img3_9@2x.jpg 2x"
                                         alt="Growing Business"
-                                        width="370"
-                                        height="294"
                                     />
                                     <div class="products__overlay">
                                         <p>
@@ -488,5 +496,62 @@
                 </div>
             </div>
         </footer>
+
+        <div class="menu js-menu-container" id="mobile-menu">
+            <button class="menu__toggle js-close-menu">
+                <svg width="18.67" height="18.67">
+                    <use href="images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+
+            <nav>
+                <ul class="menu__nav-list">
+                    <li>
+                        <a href="./index.html" class="menu__nav-link"
+                            >Agencja</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="menu__nav-link"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li><a href="" class="menu__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__block">
+                <ul class="menu__contact-list">
+                    <li class="menu__contact-element">
+                        <a class="menu__tel-link" href="tel:+48111111111"
+                            >+48 111 111 111</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="menu__mail-link"
+                            href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                </ul>
+                <ul class="menu__network-list">
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">Instagram</a>
+                    </li>
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">Twitter</a>
+                    </li>
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">Facebook</a>
+                    </li>
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script defer src="./js/mobile-menu.js"></script>
     </body>
 </html>

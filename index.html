@@ -58,7 +58,7 @@
                             class="header__contact-link"
                             href="mailto:info@devstudio.com"
                         >
-                            <svg class="header__icon" width="16" height="12">
+                            <svg class="header__mail-icon">
                                 <use
                                     href="images/icons.svg#icon-envelope"
                                 ></use></svg
@@ -67,7 +67,7 @@
                     </li>
                     <li class="header__contact-element">
                         <a class="header__contact-link" href="tel:+48111111111"
-                            ><svg class="header__icon" width="10" height="16">
+                            ><svg class="header__tel-icon">
                                 <use
                                     href="images/icons.svg#icon-smartphone"
                                 ></use></svg
@@ -75,6 +75,15 @@
                         >
                     </li>
                 </ul>
+                <svg
+                    class="header__menu-icon js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    width="24px"
+                    height="16px"
+                >
+                    <use href="images/icons.svg#icon-menu"></use>
+                </svg>
             </div>
         </header>
 
@@ -97,7 +106,7 @@
                 <div class="container">
                     <ul class="our-qualities__list">
                         <li class="our-qualities__element">
-                            <div class="our-qualities__icon">
+                            <div class="our-qualities__icon-div">
                                 <svg width="70" height="70">
                                     <use
                                         href="images/icons.svg#icon-antenna"
@@ -112,7 +121,7 @@
                             </p>
                         </li>
                         <li class="our-qualities__element">
-                            <div class="our-qualities__icon">
+                            <div class="our-qualities__icon-div">
                                 <svg width="70" height="70">
                                     <use
                                         href="images/icons.svg#icon-clock"
@@ -127,7 +136,7 @@
                             </p>
                         </li>
                         <li class="our-qualities__element">
-                            <div class="our-qualities__icon">
+                            <div class="our-qualities__icon-div">
                                 <svg width="70" height="70">
                                     <use
                                         href="images/icons.svg#icon-diagram"
@@ -142,7 +151,7 @@
                             </p>
                         </li>
                         <li class="our-qualities__element">
-                            <div class="our-qualities__icon">
+                            <div class="our-qualities__icon-div">
                                 <svg width="70" height="70">
                                     <use
                                         href="images/icons.svg#icon-astronaut"
@@ -168,6 +177,7 @@
                                 <img
                                     class="our-services__picture"
                                     src="images/img1_1.jpg"
+                                    srcset="images/img1_1@2x.jpg 2x"
                                     alt="Plan"
                                     width="370"
                                     height="294"
@@ -182,6 +192,7 @@
                                 <img
                                     class="our-services__picture"
                                     src="images/img1_2.jpg"
+                                    srcset="images/img1_2@2x.jpg 2x"
                                     alt="Projekt"
                                     width="370"
                                     height="294"
@@ -196,6 +207,7 @@
                                 <img
                                     class="our-services__picture"
                                     src="images/img1_3.jpg"
+                                    srcset="images/img1_3@2x.jpg 2x"
                                     alt="Styl"
                                     width="370"
                                     height="294"
@@ -212,13 +224,13 @@
                 <div class="container">
                     <h2 class="our-team__title">Nasz zespół</h2>
                     <ul class="our-team__list">
-                        <li>
+                        <li class="our-team__element">
                             <figure class="our-team__figure">
                                 <img
+                                    class="our-team__image"
                                     src="images/img2_1.jpg"
+                                    srcset="images/img2_1@2x.jpg 2x"
                                     alt="John Doe"
-                                    width="270"
-                                    height="260"
                                 />
                                 <figcaption class="our-team__caption">
                                     <h3 class="our-team__name">John Doe</h3>
@@ -266,13 +278,13 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="our-team__element">
                             <figure class="our-team__figure">
                                 <img
+                                    class="our-team__image"
                                     src="images/img2_2.jpg"
+                                    srcset="images/img2_2@2x.jpg 2x"
                                     alt="John Doe"
-                                    width="270"
-                                    height="260"
                                 />
                                 <figcaption class="our-team__caption">
                                     <h3 class="our-team__name">John Doe</h3>
@@ -312,13 +324,13 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="our-team__element">
                             <figure class="our-team__figure">
                                 <img
+                                    class="our-team__image"
                                     src="images/img2_3.jpg"
+                                    srcset="images/img2_3@2x.jpg 2x"
                                     alt="John Doe"
-                                    width="270"
-                                    height="260"
                                 />
                                 <figcaption class="our-team__caption">
                                     <h3 class="our-team__name">John Doe</h3>
@@ -356,13 +368,13 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="our-team__element">
                             <figure class="our-team__figure">
                                 <img
+                                    class="our-team__image"
                                     src="images/img2_4.jpg"
+                                    srcset="images/img2_4@2x.jpg 2x"
                                     alt="John Doe"
-                                    width="270"
-                                    height="260"
                                 />
                                 <figcaption class="our-team__caption">
                                     <h3 class="our-team__name">John Doe</h3>
@@ -409,7 +421,7 @@
                 <div class="container">
                     <h2 class="our-clients__title">Nasi klienci</h2>
                     <ul class="our-clients__list">
-                        <li>
+                        <li class="our-clients__element">
                             <a class="our-clients__icon" href="">
                                 <svg width="106" height="60.04">
                                     <use
@@ -418,7 +430,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="our-clients__element">
                             <a class="our-clients__icon" href="">
                                 <svg width="106" height="60.04">
                                     <use
@@ -427,7 +439,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="our-clients__element">
                             <a class="our-clients__icon" href="">
                                 <svg width="106" height="60.04">
                                     <use
@@ -436,7 +448,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="our-clients__element">
                             <a class="our-clients__icon" href="">
                                 <svg width="106" height="60.04">
                                     <use
@@ -445,7 +457,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="our-clients__element">
                             <a class="our-clients__icon" href="">
                                 <svg width="106" height="60.04">
                                     <use
@@ -454,7 +466,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="our-clients__element">
                             <a class="our-clients__icon" href="">
                                 <svg width="106" height="60.04">
                                     <use
@@ -642,5 +654,62 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+
+        <div class="menu js-menu-container" id="mobile-menu">
+            <button class="menu__toggle js-close-menu">
+                <svg width="18.67" height="18.67">
+                    <use href="images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+
+            <nav>
+                <ul class="menu__nav-list">
+                    <li>
+                        <a href="./index.html" class="menu__nav-link"
+                            >Agencja</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="menu__nav-link"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li><a href="" class="menu__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__block">
+                <ul class="menu__contact-list">
+                    <li class="menu__contact-element">
+                        <a class="menu__tel-link" href="tel:+48111111111"
+                            >+48 111 111 111</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="menu__mail-link"
+                            href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                </ul>
+                <ul class="menu__network-list">
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">Instagram</a>
+                    </li>
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">Twitter</a>
+                    </li>
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">Facebook</a>
+                    </li>
+                    <li class="menu__network-element">
+                        <a class="menu__network-link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script defer src="./js/mobile-menu.js"></script>
     </body>
 </html>

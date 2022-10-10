@@ -1,0 +1,119 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: getColor("background-0");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__nav-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__nav-link {
+        font-weight: getFontWeight("medium");
+        font-size: getFontSize("menu-nav-element");
+        line-height: 1.175;
+        letter-spacing: getLetterSpacing("header-link");
+        color: getColor("primary");
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: getColor("brand");
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    &__contact-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__tel-link {
+        text-decoration: none;
+        color: getColor("brand");
+        font-weight: getFontWeight("medium");
+        font-size: getFontSize("menu-contact-element");
+        line-height: 1.18;
+        letter-spacing: getLetterSpacing("header-link");
+    }
+
+    &__mail-link {
+        text-decoration: none;
+        color: getColor("secondary");
+        font-weight: getFontWeight("medium");
+        font-size: getFontSize("logo-reduced");
+        line-height: 1.17;
+        letter-spacing: getLetterSpacing("header-link");
+    }
+
+    &__network-list {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__network-element:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+    }
+
+    &__network-link {
+        text-decoration: none;
+        color: getColor("brand");
+        font-weight: getFontWeight("medium");
+        font-size: getFontSize("product");
+        line-height: 1.22;
+        letter-spacing: getLetterSpacing("header-link");
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: getColor("brand");
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu__toggle {
+        display: none;
+    }
+}
