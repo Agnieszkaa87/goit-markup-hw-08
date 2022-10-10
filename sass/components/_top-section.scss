@@ -8,14 +8,13 @@
     background-position: center;
     background-size: cover;
     max-width: 1600px;
-    height: 400px;
     margin: 0 auto;
 
     &__div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 118px 58px;
+        padding: 118px 15px;
         gap: 30px;
     }
 
@@ -72,8 +71,6 @@
 //desktop
 @media (min-width: 1200px) {
     .top-section {
-        height: 600px;
-
         &__div {
             padding: 200px 252px;
         }
