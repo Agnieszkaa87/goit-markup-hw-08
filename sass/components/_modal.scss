@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    min-width: 290px;
+    width: 90%;
     max-width: 450px;
     min-height: 581px;
     top: 50%;
@@ -48,7 +48,7 @@
     &__input {
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        width: 370px;
+        max-width: 370px;
         height: 40px;
         padding: 12px 12px 12px 42px;
         margin-bottom: 10px;
@@ -63,7 +63,7 @@
     &__textarea {
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        width: 370px;
+        max-width: 370px;
         height: 120px;
         resize: none;
         padding: 12px 16px 12px 16px;
@@ -167,6 +167,7 @@
 
 @media (min-width: 1200px) {
     .modal {
+        max-width: none;
         width: 528px;
 
         &__header {
@@ -174,10 +175,12 @@
         }
 
         &__input {
+            max-width: none;
             width: 448px;
         }
 
         &__textarea {
+            max-width: none;
             width: 448px;
 
             &::placeholder {
