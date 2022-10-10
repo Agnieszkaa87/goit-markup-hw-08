@@ -960,6 +960,8 @@ body {
   color: #2196f3;
 }
 .modal__button {
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   background: #2196f3;
